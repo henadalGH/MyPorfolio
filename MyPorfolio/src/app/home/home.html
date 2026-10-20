@@ -1,1 +1,182 @@
-<p>home works!</p>
+<!-- CABECERA -->
+<header class="header">
+
+  <div class="nombre">
+    <h1>HN</h1>
+    <h3>Hernán Nadal</h3>
+  </div>
+
+  <nav class="seccionBotones">
+    <a href="#presentacion" class="btn-presentacion">Inicio</a>
+    <a href="#tecnologias" class="btn-tecnologia">Tecnologías</a>
+    <a href="#sobre-mi" class="btn-yo">Sobre mí</a>
+    <a href="#contacto" class="btn-contacto">Contacto</a>
+    <a [routerLink]="['/misProyectos']" class="btn-proyecto">Proyectos</a>
+  </nav>
+
+</header>
+
+
+<!-- PRESENTACIÓN PRINCIPAL -->
+<main>
+    <section id="inicio" class="presentacion">
+
+        <div class="presentacion-contenido">
+
+            <span class="etiqueta">
+                &lt;/&gt; Desarrollador de Software Junior
+            </span>
+
+            <h1>
+                Hola, soy <span>Hernan Nadal</span>
+            </h1>
+
+            <p class="descripcion">
+                Soy Técnico Superior en Desarrollo de Software, con formación en
+                aplicaciones web y bases de datos. Me encanta la tecnología y estoy 
+                buscando mi primera oportunidad profesional para seguir creciendo y aprendiendo,
+                aportar mis conocimientos y crecer como un desarrollador de software.
+            </p>
+
+            <div class="presentacion-botones">
+
+        
+            <a href="CV_Hernan_Nadal.pdf" download="CV_Hernan_Nadal.pdf" class="btn">
+                <span>↓</span> Descargar CV
+            </a>
+
+            <a href="CV_Hernan_Nadal.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+                <span>◎</span> Ver CV
+            </a>
+
+            <a href="https://github.com/henadalGH" target="_blank" rel="noopener noreferrer" class="btn">
+                <span>●</span> GitHub
+            </a>
+
+                    
+            </div>
+
+        </div>
+
+        <div class="presentacion-imagen">
+
+            <img
+                src="imagenes/perfil.jpg"
+                alt="Fotografía de Hernan Nadal"
+            >
+
+            <p>Siempre aprendiendo y mejorando...</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="datos-basicos">
+
+        <div class="dato">
+            <span class="icono">📍</span>
+
+            <div>
+                <p>Ávila, Castilla y León</p>
+                <small>Ubicación</small>
+            </div>
+        </div>
+
+        <div class="dato">
+            <span class="icono">🎓</span>
+
+            <div>
+                <p>Técnico Superior en Desarrollo de Software</p>
+                <small>Titulación</small>
+            </div>
+        </div>
+
+        <div class="dato">
+            <span class="icono">💻</span>
+
+            <div>
+                <p>Desarrollo Web</p>
+                <small>Intereses</small>
+            </div>
+        </div>
+
+        <div class="dato">
+            <span class="icono">💼</span>
+
+            <div>
+                <p>Trabajo remoto, híbrido o presencial</p>
+                <small>Disponibilidad</small>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="tecnologias" class="tecnologias">
+
+        <div class="tecnologias-contenido">
+
+            <h2>Tecnologías principales</h2>
+
+            <div class="lista-tecnologias">
+
+                <div class="tecnologia">
+                    <img src="imagenes/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+
+                <div class="tecnologia">
+                    <img src="imagenes/spring.png" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+
+                <div class="tecnologia">
+                    <img src="imagenes/Angulars.png" alt="Angular">
+                    <p>Angular</p>
+                </div>
+
+                <div class="tecnologia">
+                    <img src="imagenes/sql.jpg" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+
+                <div class="tecnologia">
+                    <img src="imagenes/git.jpg" alt="Git">
+                    <p>Git</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <blockquote class="frase">
+            <span>“</span>
+
+            <p>
+                El desarrollo de software no es solo escribir código,
+                es resolver problemas y crear soluciones que mejoren
+                la vida de las personas.
+            </p>
+        </blockquote>
+
+    </section>
+
+    <section id="contacto">
+
+        <div class="contacto">
+            <h2>Contactos</h2>
+            <div class="contac">
+                <strong>Telefono: </strong><p>+34 642236145</p>
+            </div>
+            <div class="contac">
+                <strong>Email: </strong> <p>hrnnnadal@gmail.com</p>
+            </div>
+            <div class="contac">
+                <strong>Linkedin: </strong> <p>www.linkedin.com/in/hernan-nadal</p>
+            </div>
+        </div>
+    
+    </section>
+
+</main>

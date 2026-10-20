@@ -1,0 +1,309 @@
+:host {
+  display: block; min-height: 100vh; color: #10234d; font-family: "Segoe UI", Arial, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+main {
+  width: 100%; min-height: 100vh; overflow: hidden; background: radial-gradient( ellipse at 76% 22%, rgba(220, 233, 255, 0.45), transparent 32% ), linear-gradient( 135deg, #ffffff 0%, #f7faff 55%, #f2f7ff 100% );
+}
+section {
+  scroll-margin-top: 100px;
+}
+.header {
+  width: 100%; height: 83px; padding: 0 7.4%; display: flex; align-items: center; justify-content: space-between; gap: 30px; background: rgba(255, 255, 255, 0.91); border-bottom: 1px solid #edf1f8; position: relative; z-index: 10;
+}
+.nombre {
+  display: flex; align-items: center; gap: 30px; flex-shrink: 0;
+}
+.nombre h1 {
+  margin: 0; font-size: 42px; font-weight: 500; letter-spacing: -3px; color: #1670f8; line-height: 1;
+}
+.nombre h3 {
+  margin: 0; font-size: 24px; font-weight: 700; color: #10234d; white-space: nowrap;
+}
+.seccionBotones {
+  display: flex; align-items: center; justify-content: center; gap: 42px;
+}
+.seccionBotones a {
+  position: relative; padding: 10px 0; color: #10234d; text-decoration: none; font-size: 16px; font-weight: 500; transition: color 0.25s ease;
+}
+.seccionBotones a:hover {
+  color: #1265ff;
+}
+.seccionBotones .btn-presentacion {
+  color: #1265ff;
+}
+.seccionBotones .btn-presentacion::after {
+  content: ""; position: absolute; bottom: -5px; left: 50%; width: 100%; height: 2px; background: #1265ff; transform: translateX(-50%);
+}
+.presentacion {
+  position: relative; width: 100%; max-width: 1536px; min-height: 495px; margin: 0 auto; padding: 74px 7.4% 45px; display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 35px;
+}
+.presentacion-contenido {
+  position: relative; z-index: 2; max-width: 730px;
+}
+.etiqueta {
+  display: inline-flex; align-items: center; gap: 13px; padding: 10px 17px; margin-bottom: 22px; border-radius: 18px; background: #e5f0ff; color: #1265ff; font-size: 16px; font-weight: 500;
+}
+.etiqueta::first-letter {
+  font-weight: 700;
+}
+.presentacion-contenido h1 {
+  margin: 0 0 25px; color: #10234d; font-size: clamp(38px, 4vw, 59px); font-weight: 750; line-height: 1.14; letter-spacing: -2px;
+}
+.presentacion-contenido h1 span {
+  color: #1670f8;
+}
+.descripcion {
+  max-width: 670px; margin: 0; color: #49658f; font-size: 20px; font-weight: 400; line-height: 1.65;
+}
+.presentacion-botones {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 20px; margin-top: 28px;
+}
+.presentacion-botones a {
+  text-decoration: none; min-height: 59px; padding: 0 25px; display: inline-flex; align-items: center; justify-content: center; gap: 13px; border: 1px solid #d9e5f8; border-radius: 17px; background: #ffffff; color: #10234d; font-family: inherit; font-size: 16px; font-weight: 500; box-shadow: 0 4px 12px rgba(35, 75, 130, 0.07); cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.presentacion-botones a:hover {
+  transform: translateY(-3px); box-shadow: 0 8px 20px rgba(35, 75, 130, 0.13);
+}
+.presentacion-botones a:first-child {
+  min-width: 223px; background: linear-gradient(135deg, #2379ff, #1265f5); border-color: #2379ff; color: #ffffff; font-weight: 650; box-shadow: 0 5px 13px rgba(22, 101, 245, 0.19);
+}
+.presentacion-botones a span {
+  font-size: 24px; line-height: 1;
+}
+.presentacion-imagen {
+  position: relative; min-width: 0; min-height: 350px; display: flex; align-items: center; justify-content: center;
+}
+.presentacion-imagen::before {
+  content: ""; position: absolute; width: 370px; height: 370px; border-radius: 50%; background: linear-gradient( 135deg, rgba(221, 233, 252, 0.4), rgba(236, 243, 255, 0.8) ); z-index: 0;
+}
+.presentacion-imagen img {
+  position: relative; z-index: 1; width: 290px; height: 290px; object-fit: cover; object-position: center 40%; border-radius: 50%; border: 6px solid #ffffff; box-shadow: 0 8px 25px rgba(29, 62, 110, 0.08);
+}
+.presentacion-imagen p {
+  position: absolute; z-index: 2; right: 3%; bottom: 2px; margin: 0; color: #0754d9; font-family: "Segoe Print", "Comic Sans MS", cursive; font-size: 20px; font-style: italic; font-weight: 600; transform: rotate(-7deg);
+}
+.presentacion-imagen p::after {
+  content: ""; position: absolute; left: 25%; bottom: -10px; width: 75%; height: 3px; background: #1265ff; border-radius: 50%; transform: rotate(-5deg);
+}
+.datos-basicos {
+  width: 85.2%; max-width: 1308px; min-height: 145px; margin: 0 auto; padding: 25px 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: center; background: rgba(231, 241, 255, 0.65); border: 1px solid rgba(222, 234, 251, 0.45); border-radius: 12px;
+}
+.dato {
+  min-width: 0; min-height: 78px; display: flex; align-items: flex-start; gap: 22px; padding: 0 23px;
+}
+.dato + .dato {
+  border-left: 1px solid #cbdcf5;
+}
+.dato .icono {
+  flex-shrink: 0; font-size: 28px; line-height: 1.2;
+}
+.dato p {
+  margin: 2px 0 9px; color: #10234d; font-size: 16px; font-weight: 500; line-height: 1.5;
+}
+.dato small {
+  color: #5a77a2; font-size: 14px;
+}
+.tecnologias {
+  width: 85.2%; max-width: 1308px; margin: 47px auto 60px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: center; gap: 65px;
+}
+.tecnologias-contenido {
+  min-width: 0;
+}
+.tecnologias-contenido h2 {
+  position: relative; margin: 0 0 36px; color: #10234d; font-size: 24px; font-weight: 700;
+}
+.tecnologias-contenido h2::after {
+  content: ""; position: absolute; left: 0; bottom: -17px; width: 133px; height: 2px; background: linear-gradient( to right, #1265ff 40%, #e5efff 40% );
+}
+.lista-tecnologias {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px;
+}
+.tecnologia {
+  min-width: 0; min-height: 110px; padding: 13px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(235, 241, 250, 0.65); border-radius: 9px; box-shadow: 0 4px 15px rgba(32, 68, 115, 0.025); transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.tecnologia:hover {
+  transform: translateY(-5px); box-shadow: 0 9px 20px rgba(32, 68, 115, 0.09);
+}
+.tecnologia img {
+  width: 43px; height: 43px; object-fit: contain;
+}
+.tecnologia p {
+  margin: 0; color: #10234d; font-size: 15px; font-weight: 500; text-align: center;
+}
+.frase {
+  position: relative; margin: 0; padding: 10px 0 10px 48px; border-left: 1px solid #e3ecfa;
+}
+.frase span {
+  display: block; margin-bottom: -3px; color: #c4d8ff; font-size: 55px; font-family: Georgia, serif; font-weight: 700; line-height: 1;
+}
+.frase p {
+  margin: 0; color: #4e6b99; font-size: 17px; font-style: italic; line-height: 1.7;
+}
+@media (max-width: 1100px) {
+  .header {
+    padding: 0 4%; gap: 20px;
+  }
+  .nombre {
+    gap: 15px;
+  }
+  .nombre h3 {
+    font-size: 20px;
+  }
+  .seccionBotones {
+    gap: 22px;
+  }
+  .seccionBotones a {
+    font-size: 14px;
+  }
+  .presentacion {
+    padding: 60px 5% 40px; grid-template-columns: 1.15fr 0.85fr; gap: 20px;
+  }
+  .presentacion-contenido h1 {
+    font-size: 43px;
+  }
+  .descripcion {
+    font-size: 17px;
+  }
+  .presentacion-imagen img {
+    width: 240px; height: 240px;
+  }
+  .presentacion-imagen::before {
+    width: 310px; height: 310px;
+  }
+  .presentacion-imagen p {
+    right: 0; font-size: 16px;
+  }
+  .datos-basicos, .tecnologias {
+    width: 90%;
+  }
+  .dato {
+    gap: 12px; padding: 0 13px;
+  }
+  .dato p {
+    font-size: 14px;
+  }
+  .tecnologias {
+    grid-template-columns: minmax(0, 1fr) 260px; gap: 30px;
+  }
+  .lista-tecnologias {
+    gap: 12px;
+  }
+  .frase {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    height: auto; min-height: 75px; padding: 15px 5%; flex-wrap: wrap; gap: 15px;
+  }
+  .nombre {
+    gap: 15px;
+  }
+  .nombre h1 {
+    font-size: 35px;
+  }
+  .nombre h3 {
+    font-size: 19px;
+  }
+  .seccionBotones {
+    width: 100%; justify-content: flex-start; gap: 25px; overflow-x: auto; padding: 3px 0 8px;
+  }
+  .seccionBotones a {
+    flex-shrink: 0; font-size: 14px;
+  }
+  .presentacion {
+    padding: 42px 6% 35px; grid-template-columns: 1fr; gap: 25px;
+  }
+  .presentacion-contenido {
+    max-width: 100%;
+  }
+  .etiqueta {
+    font-size: 14px; margin-bottom: 20px;
+  }
+  .presentacion-contenido h1 {
+    font-size: clamp(35px, 8vw, 47px); letter-spacing: -1.5px; margin-bottom: 20px;
+  }
+  .descripcion {
+    font-size: 16px; line-height: 1.7;
+  }
+  .presentacion-botones {
+    gap: 12px;
+  }
+  .presentacion-botones a {
+    min-height: 52px; padding: 0 15px; font-size: 14px; border-radius: 13px;
+  }
+  .presentacion-botones a:first-child {
+    min-width: 0;
+  }
+  .presentacion-imagen {
+    min-height: 310px; margin-top: 5px;
+  }
+  .presentacion-imagen img {
+    width: 235px; height: 235px;
+  }
+  .presentacion-imagen::before {
+    width: 285px; height: 285px;
+  }
+  .presentacion-imagen p {
+    right: 5%; bottom: 0; font-size: 17px;
+  }
+  .datos-basicos {
+    width: 90%; grid-template-columns: 1fr; padding: 15px 20px;
+  }
+  .dato {
+    min-height: 75px; padding: 17px 5px; gap: 18px;
+  }
+  .dato + .dato {
+    border-left: none; border-top: 1px solid #cbdcf5;
+  }
+  .dato p {
+    font-size: 15px;
+  }
+  .tecnologias {
+    width: 90%; margin-top: 40px; grid-template-columns: 1fr; gap: 35px;
+  }
+  .tecnologias-contenido h2 {
+    font-size: 22px;
+  }
+  .lista-tecnologias {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+  }
+  .tecnologia {
+    min-height: 115px;
+  }
+  .frase {
+    padding-left: 25px;
+  }
+  .frase p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 380px) {
+  .nombre h3 {
+    font-size: 17px;
+  }
+  .seccionBotones {
+    gap: 18px;
+  }
+  .presentacion-botones {
+    gap: 8px;
+  }
+  .presentacion-botones a {
+    padding: 0 10px; font-size: 12px;
+  }
+  .presentacion-botones a:first-child {
+    min-width: 135px;
+  }
+  .presentacion-imagen img {
+    width: 205px; height: 205px;
+  }
+  .presentacion-imagen::before {
+    width: 255px; height: 255px;
+  }
+}
