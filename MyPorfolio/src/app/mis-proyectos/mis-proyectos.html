@@ -1,0 +1,129 @@
+<!-- CABECERA -->
+<header class="header">
+
+  <div class="nombre">
+    <img src="imagenHN.png" alt="Logo HN" width="50" height="50">
+    <h3>Hernán Nadal</h3>
+  </div>
+
+  <nav class="seccionBotones">
+    <a [routerLink]="['/home']" class="btn-presentacion">Inicio</a>
+    <a [routerLink]="['/home']" fragment="tecnologias" class="btn-tecnologia">Tecnologías</a>
+    <a [routerLink]="['/home']" fragment="sobre-mi" class="btn-yo">Sobre mí</a>
+    <a [routerLink]="['/home']" fragment="contacto" class="btn-contacto">Contacto</a>
+    <a [routerLink]="['/proyectos']" class="btn-proyecto">Mis proyectos</a>
+  </nav>
+
+</header>
+
+
+<!-- TÍTULO DE LA PÁGINA -->
+<main class="proyectos">
+
+  <section class="proyecto">
+    <h1>Mis proyectos</h1>
+
+    <p>
+      En esta sección presento algunos de los proyectos que he desarrollado
+      durante mi formación en Desarrollo de Software, aplicando los
+      conocimientos adquiridos y aprendiendo nuevas tecnologías.
+    </p>
+  </section>
+
+
+  <!-- PROYECTO WMOTORPRO -->
+  <section class="WMotorPro">
+
+    <div class="proyecto-contenido">
+
+      <div class="proyecto-info">
+
+        <span class="etiqueta">Proyecto final de carrera</span>
+
+        <h2>WMotorPro</h2>
+
+        <p class="descripcion">
+          Aplicación web de gestión para un taller mecánico, desarrollada
+          como proyecto final de la carrera de Técnico Superior en Desarrollo
+          de Software.
+        </p>
+
+        <p>
+          El sistema permite gestionar las principales tareas del taller,
+          desde la administración de clientes y vehículos hasta la
+          organización de turnos, órdenes de trabajo y facturación.
+        </p>
+
+        <h3>Funcionalidades principales</h3>
+
+        <ul>
+          <li>Gestión de clientes y vehículos.</li>
+          <li>Solicitud, asignación y confirmación de turnos.</li>
+          <li>Administración de órdenes de trabajo y empleados.</li>
+          <li>Gestión de repuestos y control de existencias.</li>
+          <li>Facturación y registro de movimientos económicos.</li>
+          <li>Panel de control con información y estadísticas del taller.</li>
+          <li>Acceso diferenciado según el rol del usuario.</li>
+        </ul>
+
+        <h3>Tecnologías utilizadas</h3>
+
+        <div class="tecnologias-proyecto">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>Angular</span>
+          <span>MySQL</span>
+          <span>Git</span>
+        </div>
+
+        <div class="proyecto-botones">
+
+          <a
+            href="https://github.com/henadalGH/ProyectoFinal"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-github">
+            Ver código en GitHub
+          </a>
+
+          <!-- Agregar el enlace de la aplicación cuando esté disponible -->
+          <!--
+          <a
+            href="URL_DE_TU_PROYECTO"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-demo">
+            Ver aplicación
+          </a>
+          -->
+
+        </div>
+
+      </div>
+
+      <!-- Imagen o captura del proyecto -->
+      <div class="proyecto-imagen">
+        <img
+          src="assets/wmotorpro.png"
+          alt="Captura de la aplicación web WMotorPro">
+
+        <p>Interfaz de gestión del taller mecánico</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ESPACIO PREPARADO PARA AGREGAR MÁS PROYECTOS -->
+
+  <!--
+  <section class="otro-proyecto">
+    <h2>Nombre del próximo proyecto</h2>
+    <p>Descripción breve del proyecto.</p>
+    <p>Tecnologías utilizadas.</p>
+    <a href="URL_DEL_PROYECTO">Ver proyecto</a>
+  </section>
+  -->
+
+</main>

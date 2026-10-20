@@ -1,0 +1,597 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+
+:host {
+  display: block;
+  min-height: 100vh;
+  color: #10234d;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 76% 22%,
+      rgba(220, 233, 255, 0.45),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f7faff 55%,
+      #f2f7ff 100%
+    );
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+
+/* ==============================
+   CABECERA
+   Mantiene el estilo del Home
+============================== */
+
+.header {
+  width: 100%;
+  height: 83px;
+  padding: 0 7.4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.91);
+  border-bottom: 1px solid #edf1f8;
+  position: relative;
+  z-index: 10;
+}
+
+.nombre {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.nombre img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.nombre h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  color: #1670f8;
+  line-height: 1;
+}
+
+.nombre h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #10234d;
+  white-space: nowrap;
+}
+
+.seccionBotones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+
+.seccionBotones a {
+  position: relative;
+  padding: 10px 0;
+  color: #10234d;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.seccionBotones a:hover {
+  color: #1265ff;
+}
+
+/* Sección activa: Mis proyectos */
+.seccionBotones .btn-proyecto {
+  color: #1265ff;
+}
+
+.seccionBotones .btn-proyecto::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: #1265ff;
+  transform: translateX(-50%);
+}
+
+
+/* ==============================
+   CONTENEDOR PRINCIPAL
+============================== */
+
+.proyectos {
+  width: 100%;
+  min-height: calc(100vh - 83px);
+  padding: 65px 7.4% 90px;
+}
+
+
+/* ==============================
+   TÍTULO DE LA PÁGINA
+============================== */
+
+.proyecto {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.proyecto h1 {
+  margin: 0 0 18px;
+  color: #10234d;
+  font-size: clamp(36px, 4vw, 48px);
+  font-weight: 750;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.proyecto > p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #49658d;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* ==============================
+   TARJETA WMOTORPRO
+============================== */
+
+.WMotorPro {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 42px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #e2ebfa;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(33, 86, 160, 0.07);
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.WMotorPro:hover {
+  border-color: #cbdfff;
+  box-shadow: 0 18px 42px rgba(33, 86, 160, 0.11);
+}
+
+.proyecto-contenido {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 45px;
+}
+
+
+/* ==============================
+   INFORMACIÓN DEL PROYECTO
+============================== */
+
+.proyecto-info {
+  min-width: 0;
+}
+
+.etiqueta {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 9px 16px;
+  color: #1265ff;
+  background: #e5efff;
+  border: 1px solid #d7e6ff;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.proyecto-info h2 {
+  margin: 0 0 20px;
+  color: #10234d;
+  font-size: clamp(34px, 3vw, 42px);
+  font-weight: 750;
+  letter-spacing: -1.2px;
+  line-height: 1.2;
+}
+
+.proyecto-info p {
+  margin: 0 0 16px;
+  color: #49658d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.proyecto-info .descripcion {
+  color: #344f77;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+
+/* ==============================
+   FUNCIONALIDADES
+============================== */
+
+.proyecto-info h3 {
+  margin: 27px 0 15px;
+  color: #10234d;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.proyecto-info ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proyecto-info li {
+  position: relative;
+  padding-left: 30px;
+  color: #49658d;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.proyecto-info li::before {
+  content: "✓";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1265ff;
+  background: #e5efff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+
+/* ==============================
+   TECNOLOGÍAS
+============================== */
+
+.tecnologias-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tecnologias-proyecto span {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #1265c9;
+  background: #edf4ff;
+  border: 1px solid #dce9ff;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 650;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.tecnologias-proyecto span:hover {
+  color: #ffffff;
+  background: #1265ff;
+  transform: translateY(-2px);
+}
+
+
+/* ==============================
+   BOTONES
+============================== */
+
+.proyecto-botones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.proyecto-botones a {
+  min-height: 48px;
+  padding: 13px 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8e6ff;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 650;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-github {
+  color: #ffffff;
+  background: #1c6df8;
+  border-color: #1c6df8 !important;
+  box-shadow: 0 6px 14px rgba(28, 109, 248, 0.18);
+}
+
+.btn-github:hover {
+  background: #1258d7;
+  box-shadow: 0 9px 20px rgba(28, 109, 248, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-demo {
+  color: #10234d;
+  background: #ffffff;
+}
+
+.btn-demo:hover {
+  color: #1265ff;
+  background: #f5f9ff;
+  border-color: #1265ff;
+  transform: translateY(-2px);
+}
+
+
+/* ==============================
+   IMAGEN DEL PROYECTO
+============================== */
+
+.proyecto-imagen {
+  min-width: 0;
+  padding: 14px;
+  background: linear-gradient(
+    145deg,
+    #edf4ff,
+    #f8faff
+  );
+  border: 1px solid #e0eafa;
+  border-radius: 18px;
+}
+
+.proyecto-imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 430px;
+  object-fit: contain;
+  object-position: top;
+  background: #ffffff;
+  border: 1px solid #e0e8f5;
+  border-radius: 12px;
+}
+
+.proyecto-imagen p {
+  margin: 14px 5px 2px;
+  color: #60799e;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* ==============================
+   TABLETS Y PORTÁTILES
+============================== */
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 0 4%;
+    gap: 20px;
+  }
+
+  .nombre {
+    gap: 15px;
+  }
+
+  .nombre h3 {
+    font-size: 21px;
+  }
+
+  .seccionBotones {
+    gap: 22px;
+  }
+
+  .proyectos {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .WMotorPro {
+    padding: 32px;
+  }
+
+  .proyecto-contenido {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 30px;
+  }
+}
+
+
+/* ==============================
+   MÓVILES
+============================== */
+
+@media (max-width: 760px) {
+  .header {
+    height: auto;
+    min-height: 83px;
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nombre {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nombre h3 {
+    font-size: 21px;
+  }
+
+  .seccionBotones {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+
+  .seccionBotones a {
+    padding: 7px 0;
+    font-size: 14px;
+  }
+
+  .seccionBotones .btn-proyecto::after {
+    bottom: 0;
+  }
+
+  .proyectos {
+    padding: 45px 5% 60px;
+  }
+
+  .proyecto {
+    margin-bottom: 30px;
+  }
+
+  .proyecto h1 {
+    font-size: 35px;
+  }
+
+  .proyecto > p {
+    font-size: 16px;
+  }
+
+  .WMotorPro {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .proyecto-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .proyecto-info h2 {
+    font-size: 34px;
+  }
+
+  .proyecto-info .descripcion {
+    font-size: 16px;
+  }
+
+  .proyecto-info p,
+  .proyecto-info li {
+    font-size: 15px;
+  }
+
+  .proyecto-info h3 {
+    font-size: 18px;
+  }
+
+  .proyecto-imagen {
+    grid-row: 1;
+  }
+
+  .proyecto-imagen img {
+    max-height: 330px;
+  }
+
+  .proyecto-botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .proyecto-botones a {
+    width: 100%;
+  }
+}
+
+
+/* ==============================
+   MÓVILES PEQUEÑOS
+============================== */
+
+@media (max-width: 400px) {
+  .nombre img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .nombre h3 {
+    font-size: 18px;
+  }
+
+  .seccionBotones {
+    gap: 8px 14px;
+  }
+
+  .seccionBotones a {
+    font-size: 13px;
+  }
+
+  .proyectos {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .WMotorPro {
+    padding: 20px 15px;
+  }
+
+  .proyecto-info h2 {
+    font-size: 30px;
+  }
+
+  .tecnologias-proyecto {
+    gap: 8px;
+  }
+
+  .tecnologias-proyecto span {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+}
