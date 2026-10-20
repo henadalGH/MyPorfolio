@@ -307,3 +307,8 @@ section {
     width: 255px; height: 255px;
   }
 }
+
+.contac{
+  display: flex;
+  align-items: center;
+}
